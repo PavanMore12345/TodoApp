@@ -1,0 +1,68 @@
+
+<html>
+<head>
+  <style>
+  .container:before, .container:after {
+    display:table;
+    content:"";
+    zoom:1 /* ie fix */;
+}
+
+.container:after {
+    clear:both;
+}
+
+.container {
+    width:500px;
+    margin:0 auto;
+    border:1px solid #fff;
+    box-shadow:0px 2px 7px #292929;
+    -moz-box-shadow: 0px 2px 7px #292929;
+    -webkit-box-shadow: 0px 2px 7px #292929;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    background-color:#ffffff;
+}
+div
+{
+  display:block;
+}
+
+.mainbody {
+  
+    border: solid #eee;
+    border-width:1px 0;
+    min-height:100px;
+    /*overflow: hidden;*/
+    outline:none;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+
+.header, .footer {
+    height: 40px;
+    padding: 5px;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header" contenteditable="true" aria-multiline="true" role="textbox">
+        header
+    </div>
+    <div class="mainbody" contenteditable="true">
+        main body
+    </div>
+    <div class="footer">
+        footer
+    </div>
+</div>
+
+ </body>
+</html>
